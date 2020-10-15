@@ -1,25 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Routers from './routers';
+import store from './redux/createStore';
+import { Provider } from 'react-redux';
 
 function App() {
+  // const [employees, setEmployees] = useState(
+  //   [
+  //     {
+  //       key: '1',
+  //       name: 'John Brown',
+  //       age: 32,
+  //       address: 'New York No. 1 Lake Park',
+  //       tags: ['nice', 'developer'],
+  //     },
+  //     {
+  //       key: '2',
+  //       name: 'Jim Green',
+  //       age: 42,
+  //       address: 'London No. 1 Lake Park',
+  //       tags: ['loser'],
+  //     },
+  //     {
+  //       key: '3',
+  //       name: 'Joe Black',
+  //       age: 32,
+  //       address: 'Sidney No. 1 Lake Park',
+  //       tags: ['cool', 'teacher'],
+  //     },
+  //   ]
+  // );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Routers />
+      </div>
+    </Provider>
   );
 }
 
