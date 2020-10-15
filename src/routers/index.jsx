@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SiderBar from "../components/Sidebar";
 import { Layout } from "antd";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import {   HashRouter, Route, Switch } from "react-router-dom";
 import Employees from "../pages/views/Employees";
 import AddEmployee from "../pages/views/AddEmployee";
 

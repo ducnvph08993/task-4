@@ -36,14 +36,14 @@ const AddEmployee = () => {
   const age = useSelector(state => state.inputs.age);
   const address = useSelector(state => state.inputs.address);
   const dispatch = useDispatch();
-  const form = Form();
+  // const form = Form();
 
-  form.setFieldsValue({employees:{
-    name: name,
-    age: age,
-    address:address,
+  // form.setFieldsValue({employees:{
+  //   name: name,
+  //   age: age,
+  //   address:address,
   
-  }})
+  // }})
  
 
   const handleAdd = () => {
